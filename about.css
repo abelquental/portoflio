@@ -1,0 +1,184 @@
+#work {
+  text-decoration: none;
+}
+
+#work:hover {
+  text-decoration: underline;
+}
+
+#about {
+  text-decoration: underline;
+}
+
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 15%;
+  width: 100%;
+  -ms-grid-columns: 1.5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5%;
+      grid-template-columns: 1.5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5%;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+  row-gap: 2%;
+}
+
+.about-name {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 2 / 2 / 5;
+}
+
+.about-description {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 9;
+  grid-area: 1 / 5 / 2 / 14;
+}
+
+.about-list-container {
+  margin-top: 45%;
+}
+
+.about-work {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 2 / 3 / 5;
+}
+
+.about-clients {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 5 / 3 / 8;
+}
+
+.about-education {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 8 / 3 / 11;
+}
+
+.about-exhibition {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 11 / 3 / 14;
+}
+
+.about-list-title {
+  text-decoration: underline;
+  margin-bottom: 20%;
+}
+
+.about-list-name {
+  margin-top: 10%;
+  margin-bottom: 0.5%;
+}
+
+.about-list-place, .about-list-year {
+  margin-bottom: 0.5%;
+  font-size: calc(1.65vw * 0.8);
+  line-height: calc(1.65vw * 0.9);
+}
+
+.about-list-place {
+  text-transform: none;
+}
+
+.contacts {
+  margin-top: 9%;
+  margin-bottom: 0%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container {
+    margin-top: 40%;
+    -ms-grid-columns: 2% 1fr 1fr 1fr 1fr 1fr 1fr 2%;
+        grid-template-columns: 2% 1fr 1fr 1fr 1fr 1fr 1fr 2%;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -webkit-column-gap: 1.5%;
+            column-gap: 1.5%;
+    row-gap: 2%;
+    font-size: 3.3vw;
+    line-height: calc(3.3vw * 1.1);
+  }
+  .about-name {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 2 / 2 / 5;
+  }
+  .about-description {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 5 / 2 / 8;
+    margin-bottom: 20%;
+  }
+  .about-list-container {
+    margin-top: 10%;
+  }
+  .about-work {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: 2 / 2 / 3 / 5;
+  }
+  .about-clients {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: 2 / 5 / 3 / 8;
+  }
+  .about-education {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: 3 / 2 / 4 / 5;
+  }
+  .about-exhibition {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: 3 / 5 / 4 / 8;
+  }
+  .about-list-title {
+    margin-bottom: 12%;
+  }
+  .about-list-name {
+    margin-top: 5%;
+    margin-bottom: 0.1%;
+  }
+  .about-list-place, .about-list-year {
+    margin-bottom: 0.5%;
+    font-size: calc(3.3vw * 0.8);
+    line-height: calc(3.3vw * 0.9);
+  }
+  .about-list-place {
+    text-transform: none;
+  }
+  .contacts {
+    margin-top: 22%;
+    margin-bottom: 0%;
+  }
+}
+/*# sourceMappingURL=about.css.map */
