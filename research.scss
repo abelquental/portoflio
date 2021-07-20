@@ -1,0 +1,289 @@
+$text: 1.65vw;
+
+
+
+
+
+#work {
+    text-decoration: none;
+}
+
+#work:hover {
+    text-decoration: underline;
+}
+
+#research {
+    text-decoration: underline;
+}
+
+
+.essay {
+    display: grid;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 100%;
+    grid-template-columns: 1.5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5%;
+    column-gap: 1%;
+}
+
+
+
+.title {
+    font-size: $text;
+    text-transform: uppercase;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    line-height: calc(#{$text} * 1.3);
+}
+
+.date, .keywords {
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.85);
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+.date {
+    margin-top: 15%; 
+}
+
+
+.essay-desc {
+    grid-column: 2 / 5;
+
+}
+
+.essay-content-container {
+    grid-column: 5 / 14;
+    text-transform: none;
+}
+
+
+
+
+
+
+.essay-content-container p {
+    font-size: $text;
+    line-height: calc(#{$text} * 1.3);
+    text-indent: 15%;
+    
+}
+
+
+.essay-content-container sup {
+    font-size: calc(#{$text} * 0.6);
+    vertical-align: super;
+}
+
+.essay-content-container i {
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+p.citation {
+    font-size: calc(#{$text} * 1);
+    line-height: calc(#{$text} * 1.2);
+    margin-top: 5%;
+    text-indent: 0;
+    margin-left: 15%;
+}
+
+p.citation-ref{
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.9);
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    text-indent: 0;
+}
+
+.references {
+    margin-top: 10%;
+}
+
+.references li {
+    list-style: none;
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.9);
+    margin-bottom: 1%;
+}
+
+.references li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.references li a:hover {
+    text-decoration: underline;
+
+}
+
+
+.image-big, .image-small {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    mix-blend-mode: multiply;
+}
+
+.image-big img {
+    width: 100%;
+}
+
+.image-small img {
+    width: 50%;
+}
+
+.image-desc {
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.9);
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+.first-image.image-small, .first-image.image-big {
+    margin-top: 0;
+}
+
+.nobody .image-small img {
+    mix-blend-mode: multiply;
+}
+
+.disinformation-graphics .image-big img {
+    mix-blend-mode: multiply;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    $text: 3.3vw;
+
+    .essay {
+        margin-bottom: 5%;
+        margin-top: 40%;
+        grid-template-columns: 2% 1fr 1fr 1fr 1fr 1fr 1fr 2%;
+        // grid-template-rows: auto;
+        column-gap: 1%;
+    }
+
+
+    .essay-desc {
+        grid-column: 2 / 8;
+    
+    }
+    
+    .essay-content-container {
+        grid-column: 2 / 8;
+        margin-top: 6%;
+
+    }
+    
+
+    .title {
+        font-size: $text;
+        line-height: calc(#{$text} * 1.3);
+    }
+    
+    .date, .keywords {
+        font-size: calc(#{$text} * 0.8);
+        line-height: calc(#{$text} * 0.85);
+        margin-top: 2%;
+    }
+    
+
+
+
+
+.essay-content-container p {
+    font-size: $text;
+    line-height: calc(#{$text} * 1.3);
+}
+
+
+.essay-content-container sup {
+    font-size: calc(#{$text} * 0.6);
+}
+
+
+p.citation {
+    font-size: calc(#{$text} * 1);
+    line-height: calc(#{$text} * 1.2);
+}
+
+p.citation-ref{
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.9);
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
+.references {
+    margin-top: 10%;
+}
+
+.references li {
+    list-style: none;
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.9);
+    margin-bottom: 1%;
+}
+
+.references li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.references li a:hover {
+    text-decoration: underline;
+
+}
+
+
+.image-big, .image-small {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.image-big img {
+    width: 100%;
+}
+
+.image-small img {
+    width: 50%;
+}
+
+.image-desc {
+    font-size: calc(#{$text} * 0.8);
+    line-height: calc(#{$text} * 0.9);
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.first-image.image-small, .first-image.image-big {
+    margin-top: 0;
+}
+
+
+ // ———————————  CONTACTS ——————————————
+ .contacts {
+    margin-top: 22%;
+    margin-bottom: 0%;
+}
+
+
+
+}
+
+
